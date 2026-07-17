@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  @apply bg-slate-50 text-ink;
+}
+
+.dark body {
+  @apply bg-[#0F172A] text-ink-light;
+}
+
+/* 玻璃拟态卡片 */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.dark .glass {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 隐藏滚动条但保留滚动能力 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* FullCalendar 暗色 / 玻璃风格适配 */
+.fc {
+  --fc-border-color: rgba(148, 163, 184, 0.25);
+  --fc-page-bg-color: transparent;
+  --fc-neutral-bg-color: rgba(148, 163, 184, 0.08);
+  --fc-today-bg-color: rgba(99, 102, 241, 0.12);
+  --fc-now-indicator-color: #8b5cf6;
+  font-size: 13px;
+}
+.fc .fc-toolbar-title {
+  font-size: 1rem;
+}
+.fc-theme-standard td,
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+  border-color: var(--fc-border-color);
+}
+.fc .fc-col-header-cell-cushion,
+.fc .fc-timegrid-slot-label-cushion,
+.fc .fc-daygrid-day-number {
+  color: inherit;
+}
+.fc .fc-daygrid-day-number,
+.fc .fc-col-header-cell-cushion {
+  text-decoration: none;
+}
+.fc .fc-event {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1px 4px;
+  font-size: 12px;
+}
+.fc .fc-now-indicator {
+  border-color: var(--fc-now-indicator-color);
+}

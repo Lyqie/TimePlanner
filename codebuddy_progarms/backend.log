@@ -1,0 +1,3 @@
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+$ tsx src/index.ts
+⚡ Time Planner API 运行于 http://localhost:4000

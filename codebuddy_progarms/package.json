@@ -1,0 +1,24 @@
+{
+  "name": "time-planner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "个人工作时间规划 Web 应用（前后端分离，本地优先）",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "pnpm --filter backend start",
+    "db:push": "pnpm --filter backend db:push",
+    "db:seed": "pnpm --filter backend db:seed"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "esbuild"
+    ]
+  }
+}
