@@ -1,5 +1,5 @@
-# TimePlanner · 个人工作时间规划 <sub> power by Hy3 </sub>
-仓库地址：https://github.com/Lyqie/TimePlanner.git  
+# TimePlanner · 个人工作时间规划 
+仓库地址：https://github.com/Lyqie/TimePlanner.git  <sub> power by Hy3 </sub>  
 一个'前后端分离、本地优先（Local-first）'的个人时间规划 Web 应用，覆盖「规划 — 专注 — 复盘」完整闭环：在日历上以时间块排程任务，用番茄钟专注并记录会话，最终通过报表复盘时间投入。
 
 > 数据存放在本地 SQLite，无需任何外部服务即可运行；同时保留完整后端 API，未来可平滑扩展云端同步与多设备账号。
